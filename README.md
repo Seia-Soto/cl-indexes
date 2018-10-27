@@ -1,6 +1,6 @@
 # C Lang Indexes
-This repository refers C language in programing.
-I(Seia) am wrting down this when I learn C language from academy.
+This repository refers C language which used in programing.
+I(Seia) am writing down this when I learn C language from academy.
 
 Please give me a tip when I wrote wrong.
 
