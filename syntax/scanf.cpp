@@ -11,7 +11,7 @@ int main(void) {
 
   int alpha, beta;
 
-  printf("\n\n", );
+  printf("\n\n");
   printf("This function will sum each two integer you typed.\nInput alike: (alpha, beta) > ");
   scanf("(%d, %d)\n\n", &alpha, &beta);
 
