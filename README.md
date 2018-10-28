@@ -2,7 +2,7 @@
 This repository refers C language which used in programing.
 I(Seia) am writing down this when I learn C language from academy.
 
-Please give me a tip when I wrote wrong.
+[Contributing to this repository](#contributing)
 
 ## Table of Contents
 
@@ -16,3 +16,10 @@ Please give me a tip when I wrote wrong.
   - [defining-variables](/various-examples/defining-variables.cpp)
   - [escape-characters](/various-examples/escape-characters.cpp)
   - [remarking-part](/various-examples/remarking-part.cpp)
+
+## Contributing
+
+In the moment, I am learning specs of C lang and there can be found wrong syntaxes or more better solutions for each problems.
+
+To contribute to this repository is welcome!
+Please [create pull request](/pulls) for this repository.
