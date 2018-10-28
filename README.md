@@ -22,4 +22,4 @@ I(Seia) am writing down this when I learn C language from academy.
 In the moment, I am learning specs of C lang and there can be found wrong syntaxes or more better solutions for each problems.
 
 To contribute to this repository is welcome!
-Please [create pull request](/pulls) for this repository.
+Please [create pull request](../../pulls) for this repository.
