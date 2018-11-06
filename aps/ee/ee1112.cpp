@@ -24,11 +24,10 @@ int main(void) {
 
 	scanf("%d", &a);
 
-	if (a%2) {
-    printf("NO");
-  } else {
-    printf("YES");
-  }
+	if (a % 2 || a == 2)
+		printf("NO");
+	else
+		printf("YES");
 
 	return 0;
 }
