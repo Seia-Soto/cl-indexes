@@ -17,6 +17,9 @@ I(Seia) am writing down this when I learn C language from academy.
   - [defining-variables](/various-examples/defining-variables.cpp)
   - [escape-characters](/various-examples/escape-characters.cpp)
   - [remarking-part](/various-examples/remarking-part.cpp)
+- [Problem Solving](/aps)
+  - [acmicpc](/aps/bj)
+  - [Euler Education](/aps/ee)
 
 ## Contributing
 
