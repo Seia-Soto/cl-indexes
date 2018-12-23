@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+char global_character = "If the variable defined as global, it will assign its value 0 when initialized without any value.";
+int global_int;
+float global_float;
+
 int main(void) {
   char character;
   int integer;
