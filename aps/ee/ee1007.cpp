@@ -18,7 +18,14 @@
 #include <stdio.h>
 
 int main(void) {
-  // Not ready
+  int i, n, s = 0;
+
+  scanf("%d", &n);
+
+  for (i = 1; i <= n; i++) {
+    s += (n - (i - 1)) * i;
+  }
+  printf("%d", s);
 
   return 0;
 }
