@@ -32,7 +32,24 @@
 #include <stdio.h>
 
 int main(void) {
-  // Not ready.
-  
-  return 0;
+	int i, pay[99999] = { 0, 1 }, maximumPayout = 0, daysForWork;
+
+	scanf("%d", &daysForWork);
+
+	for (i = 1; i <= daysForWork; i++) {
+		pay[2 * i] = pay[i];
+		pay[(2 * i) + 1] = pay[i] + pay[i + 1];
+
+    if (2 * i > daysForWork)
+      break;
+	}
+	for (i = 1; i <= daysForWork; i++) {
+		if (pay[i] > maximumPayout) {
+			maximumPayout = pay[i];
+		}
+	}
+
+	printf("%d", maximumPayout);
+
+	return 0;
 }

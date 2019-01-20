@@ -38,22 +38,29 @@
 
 #include <stdio.h>
 
+struct Time {
+	int h,
+		m;
+} time;
+
 int main(void) {
-  int start[2] = { 0 }, takes;
+	int toCook,
+		i;
 
-  scanf("%d %d", &start[0], &start[1]);
-  scanf("%d", takes);
+	scanf("%d %d\n%d", &time.h, &time.m, &toCook);
 
-  for (i = 1; i <= takes; i++) {
-    start[1]++;
+	for (i = toCook; i >= 1; i--) {
+		time.m++;
 
-    if (start[1] == 60) {
-      start[0]++;
-      start[1] = 0;
-    }
-    if (start[0] == 23) {
-      start[0] = 0;
-    }
-  }
-  return 0;
+		if (time.m == 60) {
+			time.m = 0;
+			time.h++;
+		}
+		if (time.h == 24)
+			time.h = 0;
+	}
+
+	printf("%d %d", time.h, time.m);
+
+	return 0;
 }

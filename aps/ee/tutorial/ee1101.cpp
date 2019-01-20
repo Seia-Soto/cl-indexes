@@ -18,11 +18,63 @@ ABUNDANT
 */
 
 #include <stdio.h>
+int getPrs(int toEvaluate);
+int Evaluate(int toEvaluate);
+
+int currentWorkflow;
 
 int main(void) {
-  int realized, ...;
-  // Not ready
+	int i, taskQueue[3];
+	char resultSheets[3][10] = {
+		"PERFECT",
+		"DEFICIENT",
+		"ABUNDANT"
+	};
 
-  int x, y, z;
-  scanf("%d %d %d", &x, &y, &z);
+	scanf("%d %d %d", &taskQueue[0], &taskQueue[1], &taskQueue[2]);
+
+	for (i = 0; i <= 2; i++) {
+		currentWorkflow = taskQueue[i];
+
+		printf("%s\n",
+			resultSheets[Evaluate(getPrs(taskQueue[i]))]);
+	}
+
+	return 0;
+}
+
+int getPrs(int toEvaluate) {
+	int i,
+		prList[60000];
+
+	for (i = 1; i <= toEvaluate - 1; i++) {
+		prList[i] = 0;
+
+		if (!(toEvaluate % i)) {
+			prList[i] = 1;
+		}
+	}
+
+	return prList;
+}
+int Evaluate(int *prList) {
+	int i, sum = 0, status = 0;
+
+	for (i = 1; i <= currentWorkflow - 1; i++) {
+		if (prList[i]) {
+			sum += i;
+		}
+	}
+
+	if (sum > currentWorkflow) {
+		status = 2;
+	}
+	else if (sum == currentWorkflow) {
+		status = 0;
+	}
+	else if (sum < currentWorkflow) {
+		status = 1;
+	}
+
+	return status;
 }
