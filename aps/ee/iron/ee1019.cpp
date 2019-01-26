@@ -20,7 +20,20 @@
 #include <stdio.h>
 
 int main(void) {
-  int n, ms = 0, os = 0;
+  int i, n, t, ms = 0, ps = 0;
 
-  scanf("%d")
+  scanf("%d", &n);
+
+  for (i = 1; i <= n; i++) {
+    scanf("%d", &t);
+
+    if (t % 2) {
+      ms++;
+    } else {
+      ps++;
+    }
+  }
+  printf("%d\n%d", ps, ms);
+
+  return 0;
 }
