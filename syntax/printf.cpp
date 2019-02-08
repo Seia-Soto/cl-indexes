@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-  char character;
+  char[] character;
   int integer;
   float floating;
 
@@ -13,7 +13,7 @@ int main(void) {
   integer = 0;
   floating = 9.8;
 
-  printf("%c is typeof character.\n", character);
+  printf("%s is typeof character.\n", character);
   printf("%d is typeof integer.\n", integer);
   printf("%f is typeof float.\n", floating);
 
