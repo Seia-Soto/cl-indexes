@@ -21,6 +21,10 @@ I(Seia) am writing down this when I learn C language from academy.
   - [acmicpc](/aps/bj)
   - [Euler Education](/aps/ee)
 
+## Code_Of_Conduct
+
+- [Ref](/CODE_OF_CONDUCT.md)
+
 ## Contributing
 
 In the moment, I am learning specs of C lang and there can be found wrong syntaxes or more better solutions for each problems.
