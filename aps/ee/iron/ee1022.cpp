@@ -19,45 +19,37 @@
 0 1 1 2 3 4 5 6 7 9
 */
 
-/*
- * This APS is not ready
- */
-
 #include <stdio.h>
 
-int sort(int table[100]);
-void print(int table[100]);
-
 int main(void) {
-  int cmx, table[100] = { 0 }, i, j, t;
+	int cmx, table[100] = { 0 }, i, j, t;
 
-  scanf("%d", &cmx);
-  cmx--;
+	scanf("%d", &cmx);
+	cmx--;
 
-  for (i = 0; i <= cmx; i++) {
-    scanf("%d", &table[i]);
-  }
+	for (i = 0; i <= cmx; i++) {
+		scanf("%d", &table[i]);
+	}
 
-  for (i = 0; i <= cmx; i++) {
-    printf("%d ", table[i]);
-  }
-  printf("\n");
+	for (i = 0; i <= cmx; i++) {
+		printf("%d ", table[i]);
+	}
+	printf("\n");
 
-  for (i = 0; i <= cmx; i++) {
-    for (j = i; j <= cmx; j++) {
-      if (j < i) {
-        // NOTE: SWAP
-        table[i] = t;
-        table[j] = table[i];
-        table[i] = table[j];
-      }
-    }
-  }
+	for (i = 0; i <= cmx; i++) {
+		for (j = i; j <= cmx; j++) {
+			if (table[j] < table[i]) {
+				t = table[i];
+				table[i] = table[j];
+				table[j] = t;
+			}
+		}
+	}
 
-  for (i = 0; i <= cmx; i++) {
-    printf("%d ", table[i]);
-  }
-  printf("\n");
+	for (i = 0; i <= cmx; i++) {
+		printf("%d ", table[i]);
+	}
+	printf("\n");
 
-  return 0;
+	return 0;
 }
