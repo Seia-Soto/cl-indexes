@@ -3,3 +3,4 @@
 | Name | isSolved |
 | :------------- | :------------- |
 | [Hello World](https://www.acmicpc.net/problem/2557) | Yes |
+| [We love kriii](https://www.acmicpc.net/problem/10718) | Yes |
